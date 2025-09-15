@@ -9,8 +9,8 @@
 class WifiService
 {
 private:
-    WifiDriver wifi_driver;
-    LedDriver led_driver;
+    WifiDriver& wifi_driver;
+    LedDriver& led_driver;
 
 public:
     WifiService(WifiDriver& wifi, LedDriver& led);
